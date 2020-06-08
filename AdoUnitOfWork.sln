@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitOfWork", "src\UnitOfWor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8AB75F74-DACF-4F27-9D25-99EDCA77AA7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWork.Sample", "UnitOfWork.Sample\UnitOfWork.Sample.csproj", "{C2BE408A-CFE8-4760-8632-9322C183B0A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWork.Sample", "src\UnitOfWork.Sample\UnitOfWork.Sample.csproj", "{C2BE408A-CFE8-4760-8632-9322C183B0A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
