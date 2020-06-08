@@ -7,18 +7,18 @@ namespace UnitOfWork.Sample
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private readonly IDbContext dbContext;
+        private readonly IDbContext _dbContext;
 
         public CustomerRepository(IDbContext dbContext)
         {
-            this.dbContext = dbContext;
+            _dbContext = dbContext;
         }
 
         private IDbConnection Connection =>
-            dbContext.UnitOfWork.Transaction.Connection;
+            _dbContext.UnitOfWork.Transaction.Connection;
 
         private IDbTransaction Transaction =>
-            dbContext.UnitOfWork.Transaction;
+            _dbContext.UnitOfWork.Transaction;
 
         public Task<Customer> ReadAsync(string id)
         {

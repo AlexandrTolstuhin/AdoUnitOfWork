@@ -4,7 +4,7 @@ using UnitOfWork.Shared;
 
 namespace UnitOfWork
 {
-    public class UnitOfWork : IUnitOfWork
+    internal class UnitOfWork : IUnitOfWork
     {
         public UnitOfWork(IDbTransaction transaction)
         {
@@ -14,7 +14,7 @@ namespace UnitOfWork
 
         public UnitOfWorkState State { get; private set; }
 
-        public IDbTransaction Transaction { get; private set; }
+        public IDbTransaction Transaction { get; }
 
         public void Commit()
         {
